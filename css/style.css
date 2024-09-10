@@ -1,6 +1,8 @@
 /****** General ***********/
 * {
 	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 	font-family: "Raleway", sans-serif;
 }
 
@@ -22,8 +24,55 @@ body {
 .main-container {
 	width: 100%;
 	max-width: 1440px;
-	padding: 0 50px;
 	box-sizing: border-box;
+}
+
+.header {
+	display: flex;
+	flex-direction: row;
+}
+
+.header__logo {
+	margin-right: auto;
+	width: 160px;
+	padding: 30px 50px;
+}
+
+.header__menu__links {
+	display: flex;
+	gap: 68px;
+ padding: 0 50px;
+}
+
+.header__link {
+	border-top: 2px solid transparent;
+}
+
+.header__link:hover {
+	border-top: 2px solid var(--main-color);
+}
+
+.intro {
+	padding: 50px;
+	background-color: green;
+}
+
+.intro__filter {
+	display: flex;
+	align-items: center;
+	gap: 1em;
+}
+
+.intro__filter__button {
+	font-weight: bold;
+	padding: 0.5em 1em;
+	background-color: #fff;
+	border: 2px solid lightgray;
+	border-radius: 2em;
+}
+
+.intro__filter__button:hover {
+	background-color: var(--filter-bg-color);
 }
 
 a {
@@ -120,6 +169,22 @@ a {
 
 .populaires-cards .card-rating {
 	margin-bottom: 5px;
+}
+
+.footer {
+	background-color: var(--main-bg-color);
+	margin-top: 1em;
+	padding: 1em 1.5em;
+	display: flex;
+}
+
+.footer__col {
+	flex: 1;
+	line-height: 2;
+}
+
+.footer__col__title {
+	font-weight: bold;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */

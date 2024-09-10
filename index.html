@@ -22,12 +22,35 @@
 
 	<body>
 		<div class="main-container">
-			<header>
-				<img src="./images/logo/Booki.png" alt="" srcset="" />
-				<p>Hébergements</p>
-				<p>Activités</p>
+			<header class="header">
+				<img src="./images/logo/Booki.png" alt="Booki logo" class="header__logo" />
+				<div class="header__menu__links">
+					<a class="header__link" href="#">Hébergements</a>
+					<a class="header__link" href="#">Activités</a>
+				</div>
 			</header>
 			<main>
+				<div class="intro">
+					<div class="intro__headline">
+						<p class="intro__headline__title">Trouvez votre hébergement pour des vacances de rêve</p>
+						<p class="intro__headline__text">En plein centre-ville ou en pleine nature</p>
+					</div>
+					<div class="intro__search">
+						<img src="" alt="" class="intro__search__icon">
+						<input type="text" class="intro__search__input">
+						<button class="intro__search__button">Rechercher</button>
+					</div>
+					<div class="intro__filter">
+						<p>Filtres</p>
+						<button class="intro__filter__button">Économique</button>
+						<button class="intro__filter__button">Familial</button>
+						<button class="intro__filter__button">Romantique</button>
+						<button class="intro__filter__button">Nos pépites</button>
+					</div>
+					<div class="intro__info">
+						<p class="intro__info__text">Plus de 500 logements sont disponibles dans cette ville</p>
+					</div>
+				</div>
 				<div class="hebergements-and-populaires">
 					<section class="hebergements"></section>
 					<section class="populaires">
@@ -123,7 +146,24 @@
 					</section>
 				</div>
 			</main>
-			<footer></footer>
+			<footer class="footer">
+				<div class="footer__col">
+					<p class="footer__col__title">À propos</p>
+					<p class="footer__col__text">Fonctionnement du site</p>
+					<p class="footer__col__text">Conditions générales</p>
+					<p class="footer__col__text">Données et confidentialité</p>
+				</div>
+				<div class="footer__col">
+					<p class="footer__col__title">Nos hébergements</p>
+					<p class="footer__col__text">Charte qualité</p>
+					<p class="footer__col__text">Proposez votre hôtel</p>
+				</div>
+				<div class="footer__col">
+					<p class="footer__col__title">Assistance</p>
+					<p class="footer__col__text">Centre d'aide</p>
+					<p class="footer__col__text">Nous contacter</p>
+				</div>
+			</footer>
 		</div>
 	</body>
 </html>
