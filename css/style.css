@@ -1,4 +1,4 @@
-/****** General ***********/
+/********** GENERAL **********/
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -25,8 +25,10 @@
 	max-width: 1440px;
 	display: flex;
 	flex-direction: column;
-	gap: 30px;
+	gap: 35px;
 }
+
+/********** HEADER **********/
 
 .header {
 	display: flex;
@@ -55,11 +57,17 @@
 	color: var(--main-color);
 }
 
-.intro {
+main {
 	padding: 0 50px;
+}
+
+/********** INTRO **********/
+
+.intro {
 	display: flex;
 	flex-direction: column;
 	gap: 35px;
+	margin-bottom: 35px;
 }
 
 .intro__headline {
@@ -131,7 +139,7 @@
 .intro__info__icon__container {
 	width: 24px;
 	height: 24px;
-	border: 1px solid  var(--filter-bg-color);
+	border: 1px solid var(--filter-bg-color);
 	border-radius: 50%;
 	display: flex;
 	align-items: center;
@@ -238,20 +246,69 @@ a {
 	margin-bottom: 5px;
 }
 
+/********** ACTIVITIES **********/
+
+.activities {
+	display: flex;
+	flex-direction: column;
+	padding: 30px;
+	gap: 30px;
+}
+
+.activities__title {
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.activities__card__wrapper {
+	display: flex;
+	flex-direction: row;
+	gap: 30px;
+}
+
+.activities__card {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	border-radius: 20px;
+	box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+.activities__card__image {
+	max-width: 100%;
+	height: 400px;
+	object-fit: cover;
+	border-radius: 20px 20px 0 0;
+}
+
+.activities__card__location {
+	font-weight: bold;
+	font-size: 16px;
+	padding: 20px;
+}
+
+/********** FOOTER **********/
+
 .footer {
 	background-color: var(--main-bg-color);
-	margin-top: 1em;
-	padding: 1em 1.5em;
+	margin: 0 50px;
 	display: flex;
 }
 
 .footer__col {
 	flex: 1;
 	line-height: 2;
+	padding: 20px;
+	gap: 15px;
 }
 
 .footer__col__title {
+	font-size: 18px;
 	font-weight: bold;
+}
+
+.footer__col__text {
+	font-size: 16px;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
