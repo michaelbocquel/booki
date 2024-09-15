@@ -20,6 +20,11 @@
 	color: var(--main-color);
 }
 
+body {
+	display: flex;
+	justify-content: center;
+}
+
 .main-container {
 	width: 100%;
 	max-width: 1440px;
@@ -279,6 +284,13 @@ a {
 	height: 400px;
 	object-fit: cover;
 	border-radius: 20px 20px 0 0;
+}
+
+.activities__card__location__container {
+	flex: 1; 
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .activities__card__location {
